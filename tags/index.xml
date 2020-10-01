@@ -6,17 +6,12 @@
     <description>Recent content in Tags on GEORGE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-<<<<<<< HEAD
     <lastBuildDate>Thu, 01 Oct 2020 18:05:48 +0800</lastBuildDate>
-=======
-    <lastBuildDate>Thu, 13 Aug 2020 15:23:50 +0800</lastBuildDate>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
     
 	<atom:link href="https://georgeblog.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-<<<<<<< HEAD
       <title>K8S</title>
       <link>https://georgeblog.cn/tags/k8s/</link>
       <pubDate>Thu, 01 Oct 2020 18:05:48 +0800</pubDate>
@@ -35,8 +30,6 @@
     </item>
     
     <item>
-=======
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       <title>Networks</title>
       <link>https://georgeblog.cn/tags/networks/</link>
       <pubDate>Thu, 13 Aug 2020 15:23:50 +0800</pubDate>

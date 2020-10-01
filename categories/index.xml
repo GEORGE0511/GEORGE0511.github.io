@@ -6,17 +6,12 @@
     <description>Recent content in Categories on GEORGE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-<<<<<<< HEAD
     <lastBuildDate>Thu, 01 Oct 2020 18:05:48 +0800</lastBuildDate>
-=======
-    <lastBuildDate>Thu, 13 Aug 2020 15:23:50 +0800</lastBuildDate>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
     
 	<atom:link href="https://georgeblog.cn/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-<<<<<<< HEAD
       <title>K8S</title>
       <link>https://georgeblog.cn/categories/k8s/</link>
       <pubDate>Thu, 01 Oct 2020 18:05:48 +0800</pubDate>
@@ -26,8 +21,6 @@
     </item>
     
     <item>
-=======
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       <title>强化学习相关</title>
       <link>https://georgeblog.cn/categories/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/</link>
       <pubDate>Thu, 13 Aug 2020 15:23:50 +0800</pubDate>

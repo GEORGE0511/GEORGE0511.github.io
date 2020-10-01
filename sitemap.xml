@@ -4,11 +4,7 @@
     <url>
       <loc>https://georgeblog.cn/categories/</loc>
       
-<<<<<<< HEAD
       <lastmod>2020-10-01T18:05:48+08:00</lastmod>
-=======
-      <lastmod>2020-08-13T15:23:50+08:00</lastmod>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       
       
@@ -18,7 +14,6 @@
     <url>
       <loc>https://georgeblog.cn/</loc>
       
-<<<<<<< HEAD
       <lastmod>2020-10-01T18:05:48+08:00</lastmod>
       
       
@@ -40,9 +35,6 @@
       <loc>https://georgeblog.cn/categories/k8s/</loc>
       
       <lastmod>2020-10-01T18:05:48+08:00</lastmod>
-=======
-      <lastmod>2020-08-13T15:23:50+08:00</lastmod>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       
       
@@ -50,15 +42,9 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
       
       <lastmod>2020-10-01T18:05:48+08:00</lastmod>
-=======
-      <loc>https://georgeblog.cn/tags/networks/</loc>
-      
-      <lastmod>2020-08-13T15:23:50+08:00</lastmod>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       
       
@@ -68,7 +54,6 @@
     <url>
       <loc>https://georgeblog.cn/posts/</loc>
       
-<<<<<<< HEAD
       <lastmod>2020-10-01T18:05:48+08:00</lastmod>
       
       
@@ -90,9 +75,6 @@
       <loc>https://georgeblog.cn/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
       
       <lastmod>2020-10-01T18:05:48+08:00</lastmod>
-=======
-      <lastmod>2020-08-13T15:23:50+08:00</lastmod>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       
       
@@ -100,11 +82,7 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/tags/networks/</loc>
-=======
-      <loc>https://georgeblog.cn/tags/rl/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2020-08-13T15:23:50+08:00</lastmod>
       
@@ -114,11 +92,7 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/tags/rl/</loc>
-=======
-      <loc>https://georgeblog.cn/tags/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2020-08-13T15:23:50+08:00</lastmod>
       
@@ -148,7 +122,6 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/post/news/</loc>
       
       <lastmod>2018-08-29T00:00:00+00:00</lastmod>
@@ -160,9 +133,6 @@
   
     <url>
       <loc>https://georgeblog.cn/post/</loc>
-=======
-      <loc>https://georgeblog.cn/posts/news/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2018-08-29T00:00:00+00:00</lastmod>
       
@@ -182,11 +152,7 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/post/news/0.48-relnotes/</loc>
-=======
-      <loc>https://georgeblog.cn/2018/0.48-relnotes/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2018-08-29T00:00:00+00:00</lastmod>
       
@@ -196,11 +162,7 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/post/news/0.47.1-relnotes/</loc>
-=======
-      <loc>https://georgeblog.cn/2018/0.47.1-relnotes/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2018-08-20T00:00:00+00:00</lastmod>
       
@@ -210,11 +172,7 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/post/news/0.47-relnotes/</loc>
-=======
-      <loc>https://georgeblog.cn/2018/0.47-relnotes/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2018-08-17T00:00:00+00:00</lastmod>
       
@@ -224,11 +182,7 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/post/news/0.46-relnotes/</loc>
-=======
-      <loc>https://georgeblog.cn/2018/0.46-relnotes/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2018-08-01T00:00:00+00:00</lastmod>
       
@@ -238,11 +192,7 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/post/news/0.45.1-relnotes/</loc>
-=======
-      <loc>https://georgeblog.cn/2018/0.45.1-relnotes/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2018-07-25T00:00:00+00:00</lastmod>
       
@@ -252,11 +202,7 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/post/news/0.45-relnotes/</loc>
-=======
-      <loc>https://georgeblog.cn/2018/0.45-relnotes/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2018-07-22T00:00:00+00:00</lastmod>
       
@@ -266,11 +212,7 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/post/news/0.44-relnotes/</loc>
-=======
-      <loc>https://georgeblog.cn/2018/0.44-relnotes/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2018-07-13T00:00:00+00:00</lastmod>
       
@@ -280,11 +222,7 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/post/news/0.43-relnotes/</loc>
-=======
-      <loc>https://georgeblog.cn/2018/0.43-relnotes/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2018-07-09T00:00:00+00:00</lastmod>
       
@@ -304,11 +242,7 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/post/news/http2-server-push-in-hugo/</loc>
-=======
-      <loc>https://georgeblog.cn/2017/http2-server-push-in-hugo/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2017-07-24T18:36:00+02:00</lastmod>
       
@@ -318,11 +252,7 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/post/creating-a-new-theme/</loc>
-=======
-      <loc>https://georgeblog.cn/2014/creating-a-new-theme/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2014-09-28T00:00:00+00:00</lastmod>
       
@@ -362,11 +292,7 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/post/goisforlovers/</loc>
-=======
-      <loc>https://georgeblog.cn/2014/goisforlovers/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2014-07-28T00:00:00+00:00</lastmod>
       
@@ -436,11 +362,7 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/post/hugoisforlovers/</loc>
-=======
-      <loc>https://georgeblog.cn/2014/hugoisforlovers/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2014-04-02T00:00:00+00:00</lastmod>
       
@@ -450,11 +372,7 @@
     </url>
   
     <url>
-<<<<<<< HEAD
       <loc>https://georgeblog.cn/post/migrate-from-jekyll/</loc>
-=======
-      <loc>https://georgeblog.cn/2014/migrate-from-jekyll/</loc>
->>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       
       <lastmod>2014-03-10T00:00:00+00:00</lastmod>
       
