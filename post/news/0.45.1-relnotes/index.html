@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="GEORGE">
+  <meta name="description" content="北京航空航天大学6系20级硕士">
+  <meta name="keywords" content="Python">
+  
+  <link rel="prev" href="https://georgeblog.cn/post/news/0.45-relnotes/" />
+  <link rel="next" href="https://georgeblog.cn/post/news/0.46-relnotes/" />
+  <link rel="canonical" href="https://georgeblog.cn/post/news/0.45.1-relnotes/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Hugo 0.45.1: Two Bug Fixes | GEORGE
+       
+  </title>
+  <meta name="title" content="Hugo 0.45.1: Two Bug Fixes | GEORGE">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/georgeblog.cn"
+    },
+    "articleSection" : "post",
+    "name" : "Hugo 0.45.1: Two Bug Fixes",
+    "headline" : "Hugo 0.45.1: Two Bug Fixes",
+    "description" : "Hugo 0.45.1 comes with two bug fixes ... and one enhancement.",
+    "inLanguage" : "en-us",
+    "author" : "GEORGE",
+    "creator" : "GEORGE",
+    "publisher": "GEORGE",
+    "accountablePerson" : "GEORGE",
+    "copyrightHolder" : "GEORGE",
+    "copyrightYear" : "2018",
+    "datePublished": "2018-07-25 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2018-07-25 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/georgeblog.cn\/post\/news\/0.45.1-relnotes\/",
+    "wordCount" : "36",
+    "keywords" : [  "GEORGE"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://georgeblog.cn">GEORGE</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">博客</a>
+                
+                <a class="menu-item" href="/categories/" title="">归类</a>
+                
+                <a class="menu-item" href="/tags/" title="">标签</a>
+                
+                <a class="menu-item" href="/about/" title="">关于我</a>
+                
+                <a class="menu-item" href="/about/" title="About Hugo">About Hugo</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://georgeblog.cn">GEORGE</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">博客</a>
+                
+                <a class="menu-item" href="/categories/" title="">归类</a>
+                
+                <a class="menu-item" href="/tags/" title="">标签</a>
+                
+                <a class="menu-item" href="/about/" title="">关于我</a>
+                
+                <a class="menu-item" href="/about/" title="About Hugo">About Hugo</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Hugo 0.45.1: Two Bug Fixes</h1>
+        <div class="post-meta">
+                <i class="far fa-folder-open"></i>
+                <span class="post-category">
+                        <a href="https://georgeblog.cn/categories/releases/"> Releases </a>
+                        
+                </span>
+          <span class="post-time">
+         <i class="far fa-calendar-alt"></i>  <time datetime=2018-07-25 itemprop="datePublished">2018-07-25</time>
+           </span>
+         <i class="far fa-file-word"></i> <span class="post-word-count"> 36 字</span>
+         <i class="far fa-clock"></i> <span class="more-meta"> 1 分钟</span>
+         <i class="fa fa-eye"></i> <span id="busuanzi_value_page_pv"></span>次
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <pre><code>This is a bug-fix release with a couple of important fixes (and one enhancement).
+</code></pre>
+<h2 id="enhancements">Enhancements</h2>
+<ul>
+<li>Add Page.FirstSection <a href="https://github.com/gohugoio/hugo/commit/016dd4a69a765061bb3da8490d3cac6ec47a91eb">016dd4a6</a> <a href="https://github.com/bep">@bep</a></li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix .Site.GetPage regression <a href="https://github.com/gohugoio/hugo/commit/04d4c08dbcac08ff7feeb88863e91799fed0937b">04d4c08d</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4989">#4989</a></li>
+<li>Fix &ldquo;borrow content from another language&rdquo; issue <a href="https://github.com/gohugoio/hugo/commit/c6b599a06d66b8e3c92343d25bb8043eb4f291f1">c6b599a0</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4986">#4986</a></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>GEORGE </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://georgeblog.cn/post/news/0.45.1-relnotes/>https://georgeblog.cn/post/news/0.45.1-relnotes/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://georgeblog.cn">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://georgeblog.cn/post/news/0.45-relnotes/" class="prev" rel="prev" title="Hugo 0.45: Revival of ref, relref and GetPage"><i class="iconfont icon-jiantou-copy"></i>&nbsp;Hugo 0.45: Revival of ref, relref and GetPage</a>
+         
+        
+        <a href="https://georgeblog.cn/post/news/0.46-relnotes/" class="next" rel="next" title="The Summer of Hugo">The Summer of Hugo&nbsp;<i class="iconfont icon-jiantou"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+          
+<div id="gitalk-container" style="border:0" ></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" style="border:0" >
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js" style="border:0"></script> 
+<script>
+  const gitalk = new Gitalk({
+    clientID: '900381cae5c789185661',
+    clientSecret: '5c50caf1386c94304f93c28a3f5e764df7dec3ec',
+    repo: 'georgeblog.cn',
+    owner: 'GEORGE0511',
+    admin: ['GEORGE0511'],
+    id: decodeURI(location.pathname), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+      return;
+    }
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
+
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2019 - 2020</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://georgeblog.cn">GEORGE</a> | </span> 
+         
+         
+		  
+          <span id="busuanzi_container_site_pv">
+            本站访问量：<span id="busuanzi_value_site_pv"></span>次
+        </span>
+        <span id="busuanzi_container_site_uv">
+             | 您是本站第 <span id="busuanzi_value_site_uv"></span> 位访问者
+        </span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+<script src="/js/copy-to-clipboard.js"></script>
+     </div>
+  </body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="GEORGE">
+  <meta name="description" content="北京航空航天大学6系20级硕士">
+  <meta name="keywords" content="Python">
+  
+  <link rel="prev" href="https://georgeblog.cn/2020/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/" />
+  
+  <link rel="canonical" href="https://georgeblog.cn/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           K8S安装教程 | GEORGE
+       
+  </title>
+  <meta name="title" content="K8S安装教程 | GEORGE">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/georgeblog.cn"
+    },
+    "articleSection" : "posts",
+    "name" : "K8S安装教程",
+    "headline" : "K8S安装教程",
+    "description" : "K8S集群安装文档 一、基础环境配置 物理机环境配置： CPU：i7-6700 3.6GHZ 内存16G 硬盘1T 操作系统：win10 64位 利用VMware创建四",
+    "inLanguage" : "en-us",
+    "author" : "GEORGE",
+    "creator" : "GEORGE",
+    "publisher": "GEORGE",
+    "accountablePerson" : "GEORGE",
+    "copyrightHolder" : "GEORGE",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-10-01 18:05:48 \u002b0800 CST",
+    "dateModified" : "2020-10-01 18:05:48 \u002b0800 CST",
+    "url" : "https:\/\/georgeblog.cn\/2020\/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B\/",
+    "wordCount" : "2081",
+    "keywords" : [ "K8S","安装教程", "GEORGE"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://georgeblog.cn">GEORGE</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">博客</a>
+                
+                <a class="menu-item" href="/categories/" title="">归类</a>
+                
+                <a class="menu-item" href="/tags/" title="">标签</a>
+                
+                <a class="menu-item" href="/about/" title="">关于我</a>
+                
+                <a class="menu-item" href="/about/" title="About Hugo">About Hugo</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://georgeblog.cn">GEORGE</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">博客</a>
+                
+                <a class="menu-item" href="/categories/" title="">归类</a>
+                
+                <a class="menu-item" href="/tags/" title="">标签</a>
+                
+                <a class="menu-item" href="/about/" title="">关于我</a>
+                
+                <a class="menu-item" href="/about/" title="About Hugo">About Hugo</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">K8S安装教程</h1>
+        <div class="post-meta">
+                <i class="far fa-folder-open"></i>
+                <span class="post-category">
+                        <a href="https://georgeblog.cn/categories/k8s/"> K8S </a>
+                        
+                </span>
+          <span class="post-time">
+         <i class="far fa-calendar-alt"></i>  <time datetime=2020-10-01 itemprop="datePublished">2020-10-01</time>
+           </span>
+         <i class="far fa-file-word"></i> <span class="post-word-count"> 2081 字</span>
+         <i class="far fa-clock"></i> <span class="more-meta"> 5 分钟</span>
+         <i class="fa fa-eye"></i> <span id="busuanzi_value_page_pv"></span>次
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h1 id="k8s集群安装文档">K8S集群安装文档</h1>
+<h2 id="一基础环境配置">一、基础环境配置</h2>
+<ul>
+<li>
+<h5 id="物理机环境配置">物理机环境配置：</h5>
+<ol>
+<li>CPU：i7-6700 3.6GHZ</li>
+<li>内存16G</li>
+<li>硬盘1T</li>
+<li>操作系统：win10 64位</li>
+</ol>
+</li>
+<li>
+<h5 id="利用vmware创建四台虚拟机">利用VMware创建四台虚拟机：</h5>
+<ol>
+<li>CPU : 2（master）1（slave)</li>
+<li>内存：1G</li>
+<li>硬盘：20G</li>
+<li>网络配置：NAT</li>
+<li>操作系统：CentOS 7</li>
+</ol>
+</li>
+</ul>
+<h2 id="二虚拟机配置">二、虚拟机配置：</h2>
+<ul>
+<li>
+<h5 id="安装jdk">安装JDK：</h5>
+<ol>
+<li>
+<p>首先输入<code>java -version</code>，如果显示java版本信息则系统中JDK已经安装如下所示：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">[</span><span style="color:#66d9ef">root@xxx</span> <span style="color:#66d9ef">~</span><span style="color:#f92672">]</span><span style="color:#66d9ef">#</span> java <span style="color:#f92672">-</span>version
+openjdk version <span style="color:#e6db74">&#34;1.8.0_222&#34;</span>
+<span style="color:#a6e22e">OpenJDK</span> <span style="color:#a6e22e">Runtime</span> <span style="color:#a6e22e">Environment</span> <span style="color:#f92672">(</span>build <span style="color:#ae81ff">1.8</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0</span>_222<span style="color:#f92672">-</span>b10<span style="color:#f92672">)</span>
+<span style="color:#a6e22e">OpenJDK</span> <span style="color:#ae81ff">64</span><span style="color:#f92672">-</span><span style="color:#a6e22e">Bit</span> <span style="color:#a6e22e">Server</span> <span style="color:#a6e22e">VM</span> <span style="color:#f92672">(</span>build <span style="color:#ae81ff">25.222</span><span style="color:#f92672">-</span>b10<span style="color:#f92672">,</span> mixed mode<span style="color:#f92672">)</span>
+</code></pre></div><p>直接跳过JDK安装</p>
+</li>
+<li>
+<p>使用yum源安装jdk1.8最新版本：</p>
+<p><code>sudo yum install java-1.8.0-openjdk* -y</code></p>
+</li>
+</ol>
+</li>
+<li>
+<h5 id="配置网络"><strong>配置网络</strong>：</h5>
+<ol>
+<li>
+<p><strong>配置IP地址（实验室集群安装时可以忽略此步）：</strong></p>
+<p>系统安装后，此时如果主机是通过路由器自动获取IP地址上网的，那么虚拟机由于选择了NAT模式，应该也是可以联外网的。但是，由于没有将虚拟机的网卡激活，此时可能无法联网。因此需要先编辑<code>ifcfg-ens33</code>文件（名字不同虚拟机可能会有所不同）激活网卡：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">cd <span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>sysconfig<span style="color:#f92672">/</span>network<span style="color:#f92672">-</span>scripts<span style="color:#f92672">/</span>
+vi ifcfg<span style="color:#f92672">-</span>ens33
+</code></pre></div><p>将<code>ONBOOT=no</code> 改为 <code>yes</code>，<code>BOOTPROTO=dhcp</code>修改为<code>BOOTPROTO=static</code>，然后修改IP地址以及DNS地址：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#a6e22e">IPADDR</span><span style="color:#66d9ef">=</span><span style="color:#ae81ff">192.168</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5.101</span>
+<span style="color:#a6e22e">NETMASK</span><span style="color:#66d9ef">=</span><span style="color:#ae81ff">255.255</span><span style="color:#f92672">.</span><span style="color:#ae81ff">255.0</span>
+<span style="color:#a6e22e">GATEWAY</span><span style="color:#66d9ef">=</span><span style="color:#ae81ff">192.168</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5.2</span>
+</code></pre></div><p>然后执行命令 <code>service network restart</code>重启网络服务。</p>
+<p>成功之后输入<code>ifconfig</code>来查看虚拟机的IP地址，如果虚拟机采用了最小安装此时<code>ifconfig</code>是无法使用的，此时输入<code>yum install net-tools</code>,即可利用<code>ifconfig</code>来查看网络：</p>
+<p><img src="https://res.cloudinary.com/georgebuaa/image/upload/v1601548085/K8S%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/1601380573636_m70uat.png" alt="1601380573636"></p>
+</li>
+<li>
+<p><strong>配置yum源</strong>
+不建议使用CentOS 7 自带的yum源，因为安装软件时会很慢。这里，我们使用阿里云的源予以替换，执行如下命令，替换文件<code>/etc/yum.repos.d/CentOS-Base.repo：</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">sudo yum clean all
+sudo wget <span style="color:#f92672">-</span>O <span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>yum<span style="color:#f92672">.</span>repos<span style="color:#f92672">.</span>d<span style="color:#f92672">/</span><span style="color:#a6e22e">CentOS</span><span style="color:#f92672">-</span><span style="color:#a6e22e">Base</span><span style="color:#f92672">.</span>repo http<span style="color:#66d9ef">:</span><span style="color:#75715e">//mirrors.aliyun.com/repo/Centos-7.repo 
+</span><span style="color:#75715e"></span>sudo yum makecache
+</code></pre></div></li>
+<li>
+<p><strong>修改hostname</strong></p>
+<p>安装集群时Master和Slave节点不好区分，可以配置Hostname来区分Master和Slave。输入<code>sudo vim /etc/hostname</code> 将内容修改为Master或者Slave。</p>
+</li>
+<li>
+<p><strong>关闭防火墙</strong>
+防火墙一定要提前关闭，否则在后续安装K8S集群的时候是个trouble maker。执行下面语句关闭，并禁用开机启动：<code>systemctl stop firewalld &amp; systemctl disable firewalld</code></p>
+</li>
+<li>
+<p><strong>关闭Swap（放置内存交换导致集群性能下降）：</strong>
+类似ElasticSearch集群，在安装K8S集群时，Linux的Swap内存交换机制是一定要关闭的，否则会因为内存交换而影响性能以及稳定性。这里，我们可以提前进行设置：</p>
+<p>执行 <code>swapoff -a</code>可临时关闭，但系统重启后恢复
+编辑/etc/fstab，输入<code>sudo vim  /etc/fstab</code>，注释掉包含swap的那一行即可，重启后可永久关闭，如下所示：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>mapper<span style="color:#f92672">/</span>centos<span style="color:#f92672">-</span>root<span style="color:#f92672">/</span>xfs defaults <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>
+<span style="color:#a6e22e">UUID</span><span style="color:#66d9ef">=</span><span style="color:#ae81ff">20</span>ca01ff<span style="color:#f92672">-</span>c5eb<span style="color:#f92672">-</span><span style="color:#ae81ff">47</span>bc<span style="color:#f92672">-</span><span style="color:#ae81ff">99</span>a0<span style="color:#f92672">-</span><span style="color:#ae81ff">6527</span>b8cb246<span style="color:#f92672">/</span>boot  xfs  defaults  <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">#</span> <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>mapper<span style="color:#f92672">/</span>centos<span style="color:#f92672">-</span>swap swap 
+</code></pre></div><p>关闭成功后，使用top命令查看，如下图所示表示正常：</p>
+<p><img src="https://res.cloudinary.com/georgebuaa/image/upload/v1601548085/K8S%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/1601380964185_v4lxtr.png" alt="1601380964185"></p>
+<p>到此，安装K8S之前所有虚拟机的基本准备工作已经完成，接下来让我们安装K8S</p>
+</li>
+</ol>
+</li>
+<li>
+<h5 id="安装k8s"><strong>安装K8S</strong>：</h5>
+<ol>
+<li>
+<h5 id="安装docker">安装Docker：</h5>
+<p>安装K8S必须要先安装Docker。这里，我们使用yum方式安装Docker社区最新版，执行以下命令，安装最新版Docker：</p>
+<p><code>sudo yum install docker-ce -y</code></p>
+<p>在实验室集群中安装出现问题：</p>
+<p>安装时发现会出现<code>No package docker-ce available.</code>的问题，应该是因为yum源的镜像版本太老导致的，所以安装 了yum-utils，它提供了 yum-config-manager，可用来管理yum源，进而个更新yum源：</p>
+<p><code>sudo yum install -y yum-utils</code></p>
+<p>添加新的yum源：</p>
+<p><code>sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</code></p>
+<p>更新索引：</p>
+<p><code>sudo yum makecache fast</code></p>
+<p>再次安装docker：</p>
+<p><code>sudo yum install -y docker-ce</code></p>
+<p><img src="https://res.cloudinary.com/georgebuaa/image/upload/v1601548085/K8S%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/1601452634132_amswef.png" alt="1601452634132"></p>
+<p><img src="https://res.cloudinary.com/georgebuaa/image/upload/v1601548085/K8S%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/1601452785059_yzuzld.png" alt="1601452785059"></p>
+<p>安装成功！</p>
+<p>启动Docker服务并激活开机启动：</p>
+<p><code>systemctl start docker &amp; systemctl enable docker</code></p>
+<p>验证一下，是否成功，输入：</p>
+<p><code>docker run hello-world</code></p>
+<p><img src="https://res.cloudinary.com/georgebuaa/image/upload/v1601548086/K8S%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/1601453070004_gaxiza.png" alt="1601453070004"></p>
+</li>
+<li>
+<h5 id="安装k8s组件">安装K8S组件：</h5>
+<p>由于自版本1.6.0起官方的仓库无法使用，所以使用案阿里云的仓库，添加<code>kubernetes.repo</code>仓库：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">cd <span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>yum<span style="color:#f92672">.</span>repos<span style="color:#f92672">.</span>d<span style="color:#f92672">/</span>
+sudo vi kubernetes<span style="color:#f92672">.</span>repo
+</code></pre></div><p>将以下内容复制到kubernetes.repo中：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">[</span><span style="color:#66d9ef">kubernetes</span><span style="color:#f92672">]</span>
+      
+name<span style="color:#66d9ef">=</span><span style="color:#a6e22e">Kubernetes</span>
+      
+baseurl<span style="color:#66d9ef">=</span>http<span style="color:#66d9ef">:</span><span style="color:#75715e">//mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-x86_64
+</span><span style="color:#75715e"></span>enabled<span style="color:#66d9ef">=</span><span style="color:#ae81ff">1</span>
+gpgcheck<span style="color:#66d9ef">=</span><span style="color:#ae81ff">0</span>
+repo_gpgcheck<span style="color:#66d9ef">=</span><span style="color:#ae81ff">0</span>
+gpgkey<span style="color:#66d9ef">=</span>http<span style="color:#66d9ef">:</span><span style="color:#75715e">//mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg
+</span><span style="color:#75715e"></span>        http<span style="color:#66d9ef">:</span><span style="color:#75715e">//mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg
+</span></code></pre></div><p>安装K8S组件</p>
+<p>执行以下命令安装kubelet、kubeadm、kubectl：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">sudo yum install <span style="color:#f92672">-</span>y kubelet kubeadm kubectl kubernetes<span style="color:#f92672">-</span>cni
+</code></pre></div></li>
+<li>
+<h5 id="启动kubelet">启动Kubelet：</h5>
+<p><code>sudo systemctl enable kubelet &amp;&amp; systemctl start kubelet</code>（slave节点无需启动kubelet）</p>
+</li>
+<li>
+<h5 id="配置hosts">配置hosts</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">sudo vi <span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>hosts
+</code></pre></div><p>添加IP地址与hostname的映射，即在文件最后一行添加</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#ae81ff">192.168</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0.209</span> vm0
+</code></pre></div></li>
+<li>
+<h5 id="配置docker网络">配置docker网络</h5>
+<p>安装k8s前还需做一步容器网络配置，执行以下命令</p>
+<p><code>vi /etc/sysctl.conf</code></p>
+<p>打开后添加以下两行</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">net<span style="color:#f92672">.</span>bridge<span style="color:#f92672">.</span>bridge<span style="color:#f92672">-</span>nf<span style="color:#f92672">-</span>call<span style="color:#f92672">-</span>ip6tables <span style="color:#66d9ef">=</span> <span style="color:#ae81ff">1</span>
+net<span style="color:#f92672">.</span>bridge<span style="color:#f92672">.</span>bridge<span style="color:#f92672">-</span>nf<span style="color:#f92672">-</span>call<span style="color:#f92672">-</span>iptables <span style="color:#66d9ef">=</span> <span style="color:#ae81ff">1</span>
+</code></pre></div><p>之后再运行命令：</p>
+<p><code>sysctl -p</code></p>
+<h4 id="以上命无论时masker还是slave节点都需要执行">以上命无论时Masker还是Slave节点都需要执行</h4>
+</li>
+<li>
+<h5 id="接下来部署master节点">接下来部署master节点：</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">sudo kubeadm init <span style="color:#f92672">--</span>image<span style="color:#f92672">-</span>repository<span style="color:#66d9ef">=</span>registry<span style="color:#f92672">.</span>aliyuncs<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>google_containers <span style="color:#f92672">--</span>pod<span style="color:#f92672">-</span>network<span style="color:#f92672">-</span>cidr<span style="color:#66d9ef">=</span><span style="color:#ae81ff">10.244</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0.0</span><span style="color:#f92672">/</span><span style="color:#ae81ff">16</span>
+</code></pre></div><p>用docker下载flannel文件</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">docker pull quay<span style="color:#f92672">.</span>io<span style="color:#f92672">/</span>coreos<span style="color:#f92672">/</span>flannel<span style="color:#66d9ef">:</span><span style="color:#66d9ef">v0.</span><span style="color:#960050;background-color:#1e0010">11</span><span style="color:#66d9ef">.</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#66d9ef">-amd64</span>
+</code></pre></div><p>执行命令：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">kubectl edit cm coredns <span style="color:#f92672">-</span>n kube<span style="color:#f92672">-</span>system
+</code></pre></div><p>按照以上提示，执行</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">mkdir <span style="color:#f92672">-</span>p <span style="color:#a6e22e">$HOME</span><span style="color:#f92672">/.</span>kube
+sudo cp <span style="color:#f92672">-</span>i <span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>kubernetes<span style="color:#f92672">/</span>admin<span style="color:#f92672">.</span>conf <span style="color:#a6e22e">$HOME</span><span style="color:#f92672">/.</span>kube<span style="color:#f92672">/</span>config
+sudo chown $<span style="color:#f92672">(</span>id <span style="color:#f92672">-</span>u<span style="color:#f92672">)</span><span style="color:#66d9ef">:</span><span style="color:#66d9ef">$</span><span style="color:#f92672">(</span><span style="color:#66d9ef">id</span> <span style="color:#66d9ef">-g</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">$HOME/.kube/config</span>
+</code></pre></div><p>然后，去官网<a href="https://kubernetes.io/docs/concepts/cluster-administration/addons/">https://kubernetes.io/docs/concepts/cluster-administration/addons/</a>找到flannel相关命令执行，在这里直接运行以下命令</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">kubectl apply <span style="color:#f92672">-</span>f https<span style="color:#66d9ef">:</span><span style="color:#75715e">//raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+</span></code></pre></div><p>安装完成后，运行以下命令查看</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">kubectl get pod <span style="color:#f92672">-</span>n kube<span style="color:#f92672">-</span>system
+</code></pre></div><p><img src="https://res.cloudinary.com/georgebuaa/image/upload/v1601548086/K8S%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/1601460764645_kida7q.png" alt="1601460764645"></p>
+</li>
+<li>
+<h5 id="将剩余slave加入集群中">将剩余slave加入集群中：</h5>
+<p>配置完成后，在master节点下查看当前</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">kubeadm token create <span style="color:#f92672">--</span>print<span style="color:#f92672">-</span>join<span style="color:#f92672">-</span>command
+</code></pre></div><p><img src="https://res.cloudinary.com/georgebuaa/image/upload/v1601548086/K8S%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/1601460842445_hahfuc.png" alt="1601460842445">复制以上命令各个slave节点当中即可将节点部署到k8s集群中，搭建完成后，在主节点上运行</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">kubectl get nodes
+</code></pre></div></li>
+</ol>
+</li>
+</ul>
+<p>​		出现以下内容，说明集群部署安装成功</p>
+<p>​		<img src="https://res.cloudinary.com/georgebuaa/image/upload/v1601548086/K8S%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/1601461032749_r8bv83.png" alt="1601461032749"></p>
+<p>​		注：</p>
+<p>​		如果配置中误将slave节点配成master节点可以采用以下命令重载各个K8S组件：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">kubeadm reset
+systemctl daemon<span style="color:#f92672">-</span>reload
+systemctl restart kubelet
+</code></pre></div>
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>GEORGE </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://georgeblog.cn/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/>https://georgeblog.cn/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://georgeblog.cn/tags/k8s/">
+                    #K8S</a></span>
+            
+            <span class="tag"><a href="https://georgeblog.cn/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
+                    #安装教程</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://georgeblog.cn">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://georgeblog.cn/2020/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/" class="prev" rel="prev" title="强化学习论文总结"><i class="iconfont icon-jiantou-copy"></i>&nbsp;强化学习论文总结</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+          
+<div id="gitalk-container" style="border:0" ></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" style="border:0" >
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js" style="border:0"></script> 
+<script>
+  const gitalk = new Gitalk({
+    clientID: '900381cae5c789185661',
+    clientSecret: '5c50caf1386c94304f93c28a3f5e764df7dec3ec',
+    repo: 'georgeblog.cn',
+    owner: 'GEORGE0511',
+    admin: ['GEORGE0511'],
+    id: decodeURI(location.pathname), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+      return;
+    }
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
+
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2019 - 2020</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://georgeblog.cn">GEORGE</a> | </span> 
+         
+         
+		  
+          <span id="busuanzi_container_site_pv">
+            本站访问量：<span id="busuanzi_value_site_pv"></span>次
+        </span>
+        <span id="busuanzi_container_site_uv">
+             | 您是本站第 <span id="busuanzi_value_site_uv"></span> 位访问者
+        </span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+<script src="/js/copy-to-clipboard.js"></script>
+     </div>
+  </body>
+</html>
