@@ -13,20 +13,34 @@
     
     <item>
       <title>Creating a New Theme</title>
+<<<<<<< HEAD
       <link>https://georgeblog.cn/post/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>https://georgeblog.cn/post/creating-a-new-theme/</guid>
+=======
+      <link>https://georgeblog.cn/2014/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://georgeblog.cn/2014/creating-a-new-theme/</guid>
+>>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>
       <title>Getting Started with Hugo</title>
+<<<<<<< HEAD
       <link>https://georgeblog.cn/post/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://georgeblog.cn/post/hugoisforlovers/</guid>
+=======
+      <link>https://georgeblog.cn/2014/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://georgeblog.cn/2014/hugoisforlovers/</guid>
+>>>>>>> 48cf93b0e1be731a1e67b6ef820767ad7662e8b7
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo
