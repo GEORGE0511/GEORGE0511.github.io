@@ -21,6 +21,16 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet">
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script type="text/javascript">
+    var navbarHeight = 55;
+    $("#page-scrollspy a.nav-link").on('click', function () {
+         
+        var target = decodeURI(this.hash.replace(/^#/, ''));
+        $('html,body').animate({scrollTop: $(":header[id='" + target + "']").offset().top - navbarHeight}, scrollSpeed);
+        return false;
+    });
+    $('body').scrollspy({ target: "#page-scrollspy", offset: navbarHeight+5 });
+</script>
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <title>
@@ -154,7 +164,6 @@
           
           
           
-
           <h2 id="introduction">Introduction</h2>
 <p>This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.</p>
 <p>We&rsquo;ll start with creating a new site with a very basic template. Then we&rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.</p>
@@ -962,7 +971,1348 @@ $ vi themes/zafta/layouts/_default/single.html
 <h3 id="dont-repeat-yourself">Don&rsquo;t Repeat Yourself</h3>
 <p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&rsquo;re figuring that out, accept that you&rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&rsquo;s okay to delay splitting up a template.</p>
 
+          
+          
+
+<style>
+    .toc {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    width: 20%;
+    transform: translateY(-50%);
+     
+     
+    border-radius: 5px;
+    padding-bottom: 1rem;
+}
+
+.toc .page-header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.toc-nav ul {
+    overflow:hidden;
+    white-space:nowrap;
+    line-height: 2rem;
+}
+
+ 
+.toc-nav ul ul ul {
+    margin-left: 2rem;
+}
+
+.toc-nav .nav-link {
+    text-overflow:ellipsis;
+    overflow:hidden;
+    color: #333;
+}
+.toc-nav li.active .nav-link {
+    background-color: #f6f6f6;
+    color: var(--accent);
+    border-left: solid 2px var(--accent);
+}
+@media (max-width: 1080px) {
+    main {
+        max-width: 100%;
+    }
+    .toc {
+        display: none;
+    }
+}
+</style>
+
+
+
+
+
+
+
+<div class="toc">
+
+    <div class="page-header"><strong>- CATALOG -</strong></div>
+
+    <div id="page-scrollspy" class="toc-nav">
+
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#introduction">
+                            Introduction
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#some-definitions">
+                            Some Definitions
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#skins">
+                            Skins
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#the-home-page">
+                            The Home Page
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#site-configuration-file">
+                            Site Configuration File
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#content">
+                            Content
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#front-matter">
+                            Front Matter
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#markdown">
+                            Markdown
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#template-files">
+                            Template Files
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#single-template">
+                            Single Template
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#list-template">
+                            List Template
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#partial-template">
+                            Partial Template
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#create-a-new-site">
+                            Create a New Site
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#generate-the-html-for-the-new-site">
+                            Generate the HTML For the New Site
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#test-the-new-site">
+                            Test the New Site
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#create-a-new-theme">
+                            Create a New Theme
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#create-a-skeleton">
+                            Create a Skeleton
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#update-the-configuration-file-to-use-the-theme">
+                            Update the Configuration File to Use the Theme
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#generate-the-site">
+                            Generate the Site
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#the-home-page-1">
+                            The Home Page
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#the-magic-of-static">
+                            The Magic of Static
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#the-theme-development-cycle">
+                            The Theme Development Cycle
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#purge-the-public-directory">
+                            Purge the public/ Directory
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#hugos-watch-option">
+                            Hugo’s Watch Option
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#live-reload">
+                            Live Reload
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#development-commands">
+                            Development Commands
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#update-the-home-page-template">
+                            Update the Home Page Template
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#make-a-static-home-page">
+                            Make a Static Home Page
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#live-reload-1">
+                            Live Reload
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#build-a-dynamic-home-page">
+                            Build a “Dynamic” Home Page
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#create-new-posts">
+                            Create New Posts
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#list-and-single-templates">
+                            List and Single Templates
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#add-content-to-the-homepage">
+                            Add Content to the Homepage
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#add-content-to-the-posts">
+                            Add Content to the Posts
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#update-the-template-file">
+                            Update the Template File
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#linking-to-content">
+                            Linking to Content
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#create-a-post-listing">
+                            Create a Post Listing
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#creating-top-level-pages">
+                            Creating Top Level Pages
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#sharing-templates">
+                            Sharing Templates
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#create-the-header-and-footer-partials">
+                            Create the Header and Footer Partials
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#update-the-home-page-template-to-use-the-partials">
+                            Update the Home Page Template to Use the Partials
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#update-the-default-single-template-to-use-the-partials">
+                            Update the Default Single Template to Use the Partials
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#add-date-published-to-posts">
+                            Add “Date Published” to Posts
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#add-date-published-to-the-template">
+                            Add “Date Published” to the Template
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#dont-repeat-yourself">
+                            Don’t Repeat Yourself
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+
     </div>
+
+</div>
+
+
+
+          
+          
+    </div>
+    
+
+
 
     <div class="post-copyright">
              
@@ -972,12 +2322,6 @@ $ vi themes/zafta/layouts/_default/single.html
                 </p>
             
            
-             
-            <p class="copyright-item">
-                    <span>Link:</span>
-                    <a href=https://example.com/post/creating-a-new-theme/>https://example.com/post/creating-a-new-theme/</span>
-            </p>
-            
              
             <p class="copyright-item lincese">
                 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
@@ -1084,7 +2428,6 @@ $ vi themes/zafta/layouts/_default/single.html
     
     <script src="/js/vendor_no_gallery.min.js" async=""></script>
     
-  
 
 
 

@@ -21,6 +21,16 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet">
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script type="text/javascript">
+    var navbarHeight = 55;
+    $("#page-scrollspy a.nav-link").on('click', function () {
+         
+        var target = decodeURI(this.hash.replace(/^#/, ''));
+        $('html,body').animate({scrollTop: $(":header[id='" + target + "']").offset().top - navbarHeight}, scrollSpeed);
+        return false;
+    });
+    $('body').scrollspy({ target: "#page-scrollspy", offset: navbarHeight+5 });
+</script>
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <title>
@@ -154,7 +164,6 @@
           
           
           
-
           <h2 id="move-static-content-to-static">Move static content to <code>static</code></h2>
 <p>Jekyll has a rule that any directory not starting with <code>_</code> will be copied as-is to the <code>_site</code> output. Hugo keeps all static content under <code>static</code>. You should therefore move it all there.
 With Jekyll, something that looked like</p>
@@ -289,7 +298,364 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
 <h2 id="a-practical-example-in-a-diff">A practical example in a diff</h2>
 <p><a href="http://heyitsalex.net/">Hey, it&rsquo;s Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this <a href="https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610">diff</a>.</p>
 
+          
+          
+
+<style>
+    .toc {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    width: 20%;
+    transform: translateY(-50%);
+     
+     
+    border-radius: 5px;
+    padding-bottom: 1rem;
+}
+
+.toc .page-header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.toc-nav ul {
+    overflow:hidden;
+    white-space:nowrap;
+    line-height: 2rem;
+}
+
+ 
+.toc-nav ul ul ul {
+    margin-left: 2rem;
+}
+
+.toc-nav .nav-link {
+    text-overflow:ellipsis;
+    overflow:hidden;
+    color: #333;
+}
+.toc-nav li.active .nav-link {
+    background-color: #f6f6f6;
+    color: var(--accent);
+    border-left: solid 2px var(--accent);
+}
+@media (max-width: 1080px) {
+    main {
+        max-width: 100%;
+    }
+    .toc {
+        display: none;
+    }
+}
+</style>
+
+
+
+
+
+
+
+<div class="toc">
+
+    <div class="page-header"><strong>- CATALOG -</strong></div>
+
+    <div id="page-scrollspy" class="toc-nav">
+
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#move-static-content-to-static">
+                            Move static content to static
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#create-your-hugo-configuration-file">
+                            Create your Hugo configuration file
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#set-your-configuration-publish-folder-to-_site">
+                            Set your configuration publish folder to _site
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#convert-jekyll-templates-to-hugo-templates">
+                            Convert Jekyll templates to Hugo templates
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#convert-jekyll-plugins-to-hugo-shortcodes">
+                            Convert Jekyll plugins to Hugo shortcodes
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#implementation">
+                            Implementation
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#usage">
+                            Usage
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#finishing-touches">
+                            Finishing touches
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#fix-content">
+                            Fix content
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#clean-up">
+                            Clean up
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#a-practical-example-in-a-diff">
+                            A practical example in a diff
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+
     </div>
+
+</div>
+
+
+
+          
+          
+    </div>
+    
+
+
 
     <div class="post-copyright">
              
@@ -299,12 +665,6 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
                 </p>
             
            
-             
-            <p class="copyright-item">
-                    <span>Link:</span>
-                    <a href=https://example.com/post/migrate-from-jekyll/>https://example.com/post/migrate-from-jekyll/</span>
-            </p>
-            
              
             <p class="copyright-item lincese">
                 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
@@ -398,7 +758,6 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
     
     <script src="/js/vendor_no_gallery.min.js" async=""></script>
     
-  
 
 
 

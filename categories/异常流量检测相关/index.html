@@ -21,6 +21,16 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet">
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script type="text/javascript">
+    var navbarHeight = 55;
+    $("#page-scrollspy a.nav-link").on('click', function () {
+         
+        var target = decodeURI(this.hash.replace(/^#/, ''));
+        $('html,body').animate({scrollTop: $(":header[id='" + target + "']").offset().top - navbarHeight}, scrollSpeed);
+        return false;
+    });
+    $('body').scrollspy({ target: "#page-scrollspy", offset: navbarHeight+5 });
+</script>
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <title>
@@ -104,7 +114,7 @@
     <h2 class="post-title" style="text-align:right;padding-bottom:2em">-&nbsp;Categories&nbsp;·&nbsp;异常流量检测相关&nbsp;-</h2>
     
     <article class="archive-item">
-        <a href="https://example.com/2020/%E5%BC%82%E5%B8%B8%E7%9B%91%E6%B5%8B%E6%96%B9%E5%90%91%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/" class="archive-item-link hvr-underline-from-center">异常监测方向文献调研</a>
+        <a href="https://example.com/2020/%E5%BC%82%E5%B8%B8%E6%B5%81%E9%87%8F%E6%A3%80%E6%B5%8B%E6%96%B9%E5%90%91%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/" class="archive-item-link hvr-underline-from-center">异常流量检测相关文献调研</a>
         <span class="archive-item-date">
             December 24, 2020
         </span>

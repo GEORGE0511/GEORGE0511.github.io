@@ -21,6 +21,16 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet">
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script type="text/javascript">
+    var navbarHeight = 55;
+    $("#page-scrollspy a.nav-link").on('click', function () {
+         
+        var target = decodeURI(this.hash.replace(/^#/, ''));
+        $('html,body').animate({scrollTop: $(":header[id='" + target + "']").offset().top - navbarHeight}, scrollSpeed);
+        return false;
+    });
+    $('body').scrollspy({ target: "#page-scrollspy", offset: navbarHeight+5 });
+</script>
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <title>
@@ -154,7 +164,6 @@
           
           
           
-
           <h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
 <p>Goto <a href="https://github.com/spf13/hugo/releases">hugo releases</a> and download the
 appropriate version for your os and architecture.</p>
@@ -210,7 +219,180 @@ Having nearly instant feedback enables you to have your creativity flow without 
 <h2 id="step-4-have-fun">Step 4. Have fun</h2>
 <p>The best way to learn something is to play with it.</p>
 
+          
+          
+
+<style>
+    .toc {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    width: 20%;
+    transform: translateY(-50%);
+     
+     
+    border-radius: 5px;
+    padding-bottom: 1rem;
+}
+
+.toc .page-header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.toc-nav ul {
+    overflow:hidden;
+    white-space:nowrap;
+    line-height: 2rem;
+}
+
+ 
+.toc-nav ul ul ul {
+    margin-left: 2rem;
+}
+
+.toc-nav .nav-link {
+    text-overflow:ellipsis;
+    overflow:hidden;
+    color: #333;
+}
+.toc-nav li.active .nav-link {
+    background-color: #f6f6f6;
+    color: var(--accent);
+    border-left: solid 2px var(--accent);
+}
+@media (max-width: 1080px) {
+    main {
+        max-width: 100%;
+    }
+    .toc {
+        display: none;
+    }
+}
+</style>
+
+
+
+
+
+
+
+<div class="toc">
+
+    <div class="page-header"><strong>- CATALOG -</strong></div>
+
+    <div id="page-scrollspy" class="toc-nav">
+
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#step-1-install-hugo">
+                            Step 1. Install Hugo
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#step-2-build-the-docs">
+                            Step 2. Build the Docs
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#step-3-change-the-docs-site">
+                            Step 3. Change the docs site
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#step-4-have-fun">
+                            Step 4. Have fun
+                            </a>
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+
     </div>
+
+</div>
+
+
+
+          
+          
+    </div>
+    
+
+
 
     <div class="post-copyright">
              
@@ -220,12 +402,6 @@ Having nearly instant feedback enables you to have your creativity flow without 
                 </p>
             
            
-             
-            <p class="copyright-item">
-                    <span>Link:</span>
-                    <a href=https://example.com/post/hugoisforlovers/>https://example.com/post/hugoisforlovers/</span>
-            </p>
-            
              
             <p class="copyright-item lincese">
                 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
@@ -338,7 +514,6 @@ Having nearly instant feedback enables you to have your creativity flow without 
     
     <script src="/js/vendor_no_gallery.min.js" async=""></script>
     
-  
 
 
 
