@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>强化学习相关 on GEORGE</title>
-    <link>https://georgeblog.cn/categories/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/</link>
+    <link>https://example.com/categories/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/</link>
     <description>Recent content in 强化学习相关 on GEORGE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 13 Aug 2020 15:23:50 +0800</lastBuildDate>
     
-	<atom:link href="https://georgeblog.cn/categories/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/categories/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>强化学习论文总结</title>
-      <link>https://georgeblog.cn/2020/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/</link>
+      <link>https://example.com/2020/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/</link>
       <pubDate>Thu, 13 Aug 2020 15:23:50 +0800</pubDate>
       
-      <guid>https://georgeblog.cn/2020/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://example.com/2020/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/</guid>
       <description>##由于研究生期间主要是做强化学习相关内容，所以取Google Scholar 找了若干篇高被引论文，希望可以快速入门强化学习领域。本文主要记录文章的相关内</description>
     </item>
     

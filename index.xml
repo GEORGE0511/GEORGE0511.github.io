@@ -1,37 +1,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GEORGE on GEORGE</title>
-    <link>https://georgeblog.cn/</link>
+    <link>https://example.com/</link>
     <description>Recent content in GEORGE on GEORGE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2020 18:05:48 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 24 Dec 2020 21:23:25 +0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Posts</title>
-      <link>https://georgeblog.cn/posts/</link>
-      <pubDate>Thu, 01 Oct 2020 18:05:48 +0800</pubDate>
+      <link>https://example.com/posts/</link>
+      <pubDate>Thu, 24 Dec 2020 21:23:25 +0800</pubDate>
       
-      <guid>https://georgeblog.cn/posts/</guid>
+      <guid>https://example.com/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posts</title>
-      <link>https://georgeblog.cn/post/</link>
-      <pubDate>Wed, 29 Aug 2018 00:00:00 +0000</pubDate>
+      <link>https://example.com/post/</link>
+      <pubDate>Thu, 24 Dec 2020 21:22:34 +0800</pubDate>
       
-      <guid>https://georgeblog.cn/post/</guid>
+      <guid>https://example.com/post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About Hugo</title>
-      <link>https://georgeblog.cn/about/</link>
+      <link>https://example.com/about/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://georgeblog.cn/about/</guid>
+      <guid>https://example.com/about/</guid>
       <description>&lt;p&gt;Hugo is the &lt;strong&gt;world’s fastest framework for building websites&lt;/strong&gt;. It is written in Go.&lt;/p&gt;
 &lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
 &lt;ul&gt;

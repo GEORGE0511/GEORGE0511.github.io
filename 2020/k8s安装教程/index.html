@@ -9,9 +9,9 @@
   <meta name="description" content="北京航空航天大学6系20级硕士">
   <meta name="keywords" content="Python">
   
-  <link rel="prev" href="https://georgeblog.cn/2020/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/" />
-  
-  <link rel="canonical" href="https://georgeblog.cn/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" />
+  <link rel="prev" href="https://example.com/2020/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/" />
+  <link rel="next" href="https://example.com/2020/%E5%BC%82%E5%B8%B8%E7%9B%91%E6%B5%8B%E6%96%B9%E5%90%91%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/" />
+  <link rel="canonical" href="https://example.com/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -45,7 +45,7 @@
     "@type" : "BlogPosting",
     "mainEntityOfPage": {
          "@type": "WebPage",
-         "@id": "https:\/\/georgeblog.cn"
+         "@id": "https:\/\/example.com"
     },
     "articleSection" : "posts",
     "name" : "K8S安装教程",
@@ -60,7 +60,7 @@
     "copyrightYear" : "2020",
     "datePublished": "2020-10-01 18:05:48 \u002b0800 CST",
     "dateModified" : "2020-10-01 18:05:48 \u002b0800 CST",
-    "url" : "https:\/\/georgeblog.cn\/2020\/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B\/",
+    "url" : "https:\/\/example.com\/2020\/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B\/",
     "wordCount" : "2081",
     "keywords" : [ "K8S","安装教程", "GEORGE"]
 }
@@ -76,7 +76,7 @@
         <nav class="navbar">
     <div class="container">
         <div class="navbar-header header-logo">
-        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://georgeblog.cn">GEORGE</a>
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://example.com">GEORGE</a>
         </div>
         <div class="menu navbar-right">
                 
@@ -97,7 +97,7 @@
 <nav class="navbar-mobile" id="nav-mobile" style="display: none">
      <div class="container">
         <div class="navbar-header">
-            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://georgeblog.cn">GEORGE</a></div>
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://example.com">GEORGE</a></div>
             <div class="menu-toggle">
                 <span></span><span></span><span></span>
             </div>
@@ -128,7 +128,7 @@
         <div class="post-meta">
                 <i class="far fa-folder-open"></i>
                 <span class="post-category">
-                        <a href="https://georgeblog.cn/categories/k8s/"> K8S </a>
+                        <a href="https://example.com/categories/k8s/"> K8S </a>
                         
                 </span>
           <span class="post-time">
@@ -205,12 +205,12 @@ openjdk version <span style="color:#e6db74">&#34;1.8.0_222&#34;</span>
 <li>
 <p><strong>配置IP地址（实验室集群安装时可以忽略此步）：</strong></p>
 <p>系统安装后，此时如果主机是通过路由器自动获取IP地址上网的，那么虚拟机由于选择了NAT模式，应该也是可以联外网的。但是，由于没有将虚拟机的网卡激活，此时可能无法联网。因此需要先编辑<code>ifcfg-ens33</code>文件（名字不同虚拟机可能会有所不同）激活网卡：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">cd <span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>sysconfig<span style="color:#f92672">/</span>network<span style="color:#f92672">-</span>scripts<span style="color:#f92672">/</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">cd <span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>sysconfig<span style="color:#f92672">/</span>network<span style="color:#f92672">-</span>scripts<span style="color:#f92672">/</span>
 vi ifcfg<span style="color:#f92672">-</span>ens33
 </code></pre></div><p>将<code>ONBOOT=no</code> 改为 <code>yes</code>，<code>BOOTPROTO=dhcp</code>修改为<code>BOOTPROTO=static</code>，然后修改IP地址以及DNS地址：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#a6e22e">IPADDR</span><span style="color:#66d9ef">=</span><span style="color:#ae81ff">192.168</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5.101</span>
-<span style="color:#a6e22e">NETMASK</span><span style="color:#66d9ef">=</span><span style="color:#ae81ff">255.255</span><span style="color:#f92672">.</span><span style="color:#ae81ff">255.0</span>
-<span style="color:#a6e22e">GATEWAY</span><span style="color:#66d9ef">=</span><span style="color:#ae81ff">192.168</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5.2</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">IPADDR<span style="color:#f92672">=</span><span style="color:#ae81ff">192.168</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5.101</span>
+NETMASK<span style="color:#f92672">=</span><span style="color:#ae81ff">255.255</span><span style="color:#f92672">.</span><span style="color:#ae81ff">255.0</span>
+GATEWAY<span style="color:#f92672">=</span><span style="color:#ae81ff">192.168</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5.2</span>
 </code></pre></div><p>然后执行命令 <code>service network restart</code>重启网络服务。</p>
 <p>成功之后输入<code>ifconfig</code>来查看虚拟机的IP地址，如果虚拟机采用了最小安装此时<code>ifconfig</code>是无法使用的，此时输入<code>yum install net-tools</code>,即可利用<code>ifconfig</code>来查看网络：</p>
 <p><img src="https://res.cloudinary.com/georgebuaa/image/upload/v1601548085/K8S%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/1601380573636_m70uat.png" alt="1601380573636"></p>
@@ -218,9 +218,9 @@ vi ifcfg<span style="color:#f92672">-</span>ens33
 <li>
 <p><strong>配置yum源</strong>
 不建议使用CentOS 7 自带的yum源，因为安装软件时会很慢。这里，我们使用阿里云的源予以替换，执行如下命令，替换文件<code>/etc/yum.repos.d/CentOS-Base.repo：</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">sudo yum clean all
-sudo wget <span style="color:#f92672">-</span>O <span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>yum<span style="color:#f92672">.</span>repos<span style="color:#f92672">.</span>d<span style="color:#f92672">/</span><span style="color:#a6e22e">CentOS</span><span style="color:#f92672">-</span><span style="color:#a6e22e">Base</span><span style="color:#f92672">.</span>repo http<span style="color:#66d9ef">:</span><span style="color:#75715e">//mirrors.aliyun.com/repo/Centos-7.repo 
-</span><span style="color:#75715e"></span>sudo yum makecache
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sudo yum clean all
+sudo wget <span style="color:#f92672">-</span>O <span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>yum<span style="color:#f92672">.</span>repos<span style="color:#f92672">.</span>d<span style="color:#f92672">/</span>CentOS<span style="color:#f92672">-</span>Base<span style="color:#f92672">.</span>repo http:<span style="color:#f92672">//</span>mirrors<span style="color:#f92672">.</span>aliyun<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>repo<span style="color:#f92672">/</span>Centos<span style="color:#f92672">-</span><span style="color:#ae81ff">7.</span>repo 
+sudo yum makecache
 </code></pre></div></li>
 <li>
 <p><strong>修改hostname</strong></p>
@@ -235,9 +235,9 @@ sudo wget <span style="color:#f92672">-</span>O <span style="color:#f92672">/</s
 类似ElasticSearch集群，在安装K8S集群时，Linux的Swap内存交换机制是一定要关闭的，否则会因为内存交换而影响性能以及稳定性。这里，我们可以提前进行设置：</p>
 <p>执行 <code>swapoff -a</code>可临时关闭，但系统重启后恢复
 编辑/etc/fstab，输入<code>sudo vim  /etc/fstab</code>，注释掉包含swap的那一行即可，重启后可永久关闭，如下所示：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>mapper<span style="color:#f92672">/</span>centos<span style="color:#f92672">-</span>root<span style="color:#f92672">/</span>xfs defaults <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>
-<span style="color:#a6e22e">UUID</span><span style="color:#66d9ef">=</span><span style="color:#ae81ff">20</span>ca01ff<span style="color:#f92672">-</span>c5eb<span style="color:#f92672">-</span><span style="color:#ae81ff">47</span>bc<span style="color:#f92672">-</span><span style="color:#ae81ff">99</span>a0<span style="color:#f92672">-</span><span style="color:#ae81ff">6527</span>b8cb246<span style="color:#f92672">/</span>boot  xfs  defaults  <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">#</span> <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>mapper<span style="color:#f92672">/</span>centos<span style="color:#f92672">-</span>swap swap 
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>mapper<span style="color:#f92672">/</span>centos<span style="color:#f92672">-</span>root<span style="color:#f92672">/</span>xfs defaults <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>
+UUID<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>ca01ff<span style="color:#f92672">-</span>c5eb<span style="color:#f92672">-</span><span style="color:#ae81ff">47</span>bc<span style="color:#f92672">-</span><span style="color:#ae81ff">99</span>a0<span style="color:#f92672">-</span><span style="color:#ae81ff">6527</span>b8cb246<span style="color:#f92672">/</span>boot  xfs  defaults  <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>
+<span style="color:#75715e"># /dev/mapper/centos-swap swap </span>
 </code></pre></div><p>关闭成功后，使用top命令查看，如下图所示表示正常：</p>
 <p><img src="https://res.cloudinary.com/georgebuaa/image/upload/v1601548085/K8S%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/1601380964185_v4lxtr.png" alt="1601380964185"></p>
 <p>到此，安装K8S之前所有虚拟机的基本准备工作已经完成，接下来让我们安装K8S</p>
@@ -272,68 +272,68 @@ sudo wget <span style="color:#f92672">-</span>O <span style="color:#f92672">/</s
 <li>
 <h5 id="安装k8s组件">安装K8S组件：</h5>
 <p>由于自版本1.6.0起官方的仓库无法使用，所以使用案阿里云的仓库，添加<code>kubernetes.repo</code>仓库：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">cd <span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>yum<span style="color:#f92672">.</span>repos<span style="color:#f92672">.</span>d<span style="color:#f92672">/</span>
-sudo vi kubernetes<span style="color:#f92672">.</span>repo
-</code></pre></div><p>将以下内容复制到kubernetes.repo中：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#f92672">[</span><span style="color:#66d9ef">kubernetes</span><span style="color:#f92672">]</span>
+<pre><code>cd /etc/yum.repos.d/
+sudo vi kubernetes.repo
+</code></pre><p>将以下内容复制到kubernetes.repo中：</p>
+<pre><code>[kubernetes]
       
-name<span style="color:#66d9ef">=</span><span style="color:#a6e22e">Kubernetes</span>
+name=Kubernetes
       
-baseurl<span style="color:#66d9ef">=</span>http<span style="color:#66d9ef">:</span><span style="color:#75715e">//mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-x86_64
-</span><span style="color:#75715e"></span>enabled<span style="color:#66d9ef">=</span><span style="color:#ae81ff">1</span>
-gpgcheck<span style="color:#66d9ef">=</span><span style="color:#ae81ff">0</span>
-repo_gpgcheck<span style="color:#66d9ef">=</span><span style="color:#ae81ff">0</span>
-gpgkey<span style="color:#66d9ef">=</span>http<span style="color:#66d9ef">:</span><span style="color:#75715e">//mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg
-</span><span style="color:#75715e"></span>        http<span style="color:#66d9ef">:</span><span style="color:#75715e">//mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg
-</span></code></pre></div><p>安装K8S组件</p>
+baseurl=http://mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=0
+repo_gpgcheck=0
+gpgkey=http://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg
+        http://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg
+</code></pre><p>安装K8S组件</p>
 <p>执行以下命令安装kubelet、kubeadm、kubectl：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">sudo yum install <span style="color:#f92672">-</span>y kubelet kubeadm kubectl kubernetes<span style="color:#f92672">-</span>cni
-</code></pre></div></li>
+<pre><code>sudo yum install -y kubelet kubeadm kubectl kubernetes-cni
+</code></pre></li>
 <li>
 <h5 id="启动kubelet">启动Kubelet：</h5>
 <p><code>sudo systemctl enable kubelet &amp;&amp; systemctl start kubelet</code>（slave节点无需启动kubelet）</p>
 </li>
 <li>
 <h5 id="配置hosts">配置hosts</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">sudo vi <span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>hosts
-</code></pre></div><p>添加IP地址与hostname的映射，即在文件最后一行添加</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#ae81ff">192.168</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0.209</span> vm0
-</code></pre></div></li>
+<pre><code>sudo vi /etc/hosts
+</code></pre><p>添加IP地址与hostname的映射，即在文件最后一行添加</p>
+<pre><code>192.168.0.209 vm0
+</code></pre></li>
 <li>
 <h5 id="配置docker网络">配置docker网络</h5>
 <p>安装k8s前还需做一步容器网络配置，执行以下命令</p>
 <p><code>vi /etc/sysctl.conf</code></p>
 <p>打开后添加以下两行</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">net<span style="color:#f92672">.</span>bridge<span style="color:#f92672">.</span>bridge<span style="color:#f92672">-</span>nf<span style="color:#f92672">-</span>call<span style="color:#f92672">-</span>ip6tables <span style="color:#66d9ef">=</span> <span style="color:#ae81ff">1</span>
-net<span style="color:#f92672">.</span>bridge<span style="color:#f92672">.</span>bridge<span style="color:#f92672">-</span>nf<span style="color:#f92672">-</span>call<span style="color:#f92672">-</span>iptables <span style="color:#66d9ef">=</span> <span style="color:#ae81ff">1</span>
-</code></pre></div><p>之后再运行命令：</p>
+<pre><code>net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+</code></pre><p>之后再运行命令：</p>
 <p><code>sysctl -p</code></p>
 <h4 id="以上命无论时masker还是slave节点都需要执行">以上命无论时Masker还是Slave节点都需要执行</h4>
 </li>
 <li>
 <h5 id="接下来部署master节点">接下来部署master节点：</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">sudo kubeadm init <span style="color:#f92672">--</span>image<span style="color:#f92672">-</span>repository<span style="color:#66d9ef">=</span>registry<span style="color:#f92672">.</span>aliyuncs<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>google_containers <span style="color:#f92672">--</span>pod<span style="color:#f92672">-</span>network<span style="color:#f92672">-</span>cidr<span style="color:#66d9ef">=</span><span style="color:#ae81ff">10.244</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0.0</span><span style="color:#f92672">/</span><span style="color:#ae81ff">16</span>
-</code></pre></div><p>用docker下载flannel文件</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">docker pull quay<span style="color:#f92672">.</span>io<span style="color:#f92672">/</span>coreos<span style="color:#f92672">/</span>flannel<span style="color:#66d9ef">:</span><span style="color:#66d9ef">v0.</span><span style="color:#960050;background-color:#1e0010">11</span><span style="color:#66d9ef">.</span><span style="color:#960050;background-color:#1e0010">0</span><span style="color:#66d9ef">-amd64</span>
-</code></pre></div><p>执行命令：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">kubectl edit cm coredns <span style="color:#f92672">-</span>n kube<span style="color:#f92672">-</span>system
-</code></pre></div><p>按照以上提示，执行</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">mkdir <span style="color:#f92672">-</span>p <span style="color:#a6e22e">$HOME</span><span style="color:#f92672">/.</span>kube
-sudo cp <span style="color:#f92672">-</span>i <span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>kubernetes<span style="color:#f92672">/</span>admin<span style="color:#f92672">.</span>conf <span style="color:#a6e22e">$HOME</span><span style="color:#f92672">/.</span>kube<span style="color:#f92672">/</span>config
-sudo chown $<span style="color:#f92672">(</span>id <span style="color:#f92672">-</span>u<span style="color:#f92672">)</span><span style="color:#66d9ef">:</span><span style="color:#66d9ef">$</span><span style="color:#f92672">(</span><span style="color:#66d9ef">id</span> <span style="color:#66d9ef">-g</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">$HOME/.kube/config</span>
-</code></pre></div><p>然后，去官网<a href="https://kubernetes.io/docs/concepts/cluster-administration/addons/">https://kubernetes.io/docs/concepts/cluster-administration/addons/</a>找到flannel相关命令执行，在这里直接运行以下命令</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">kubectl apply <span style="color:#f92672">-</span>f https<span style="color:#66d9ef">:</span><span style="color:#75715e">//raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
-</span></code></pre></div><p>安装完成后，运行以下命令查看</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">kubectl get pod <span style="color:#f92672">-</span>n kube<span style="color:#f92672">-</span>system
-</code></pre></div><p><img src="https://res.cloudinary.com/georgebuaa/image/upload/v1601548086/K8S%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/1601460764645_kida7q.png" alt="1601460764645"></p>
+<pre><code>sudo kubeadm init --image-repository=registry.aliyuncs.com/google_containers --pod-network-cidr=10.244.0.0/16
+</code></pre><p>用docker下载flannel文件</p>
+<pre><code>docker pull quay.io/coreos/flannel:v0.11.0-amd64
+</code></pre><p>执行命令：</p>
+<pre><code>kubectl edit cm coredns -n kube-system
+</code></pre><p>按照以上提示，执行</p>
+<pre><code>mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+</code></pre><p>然后，去官网<a href="https://kubernetes.io/docs/concepts/cluster-administration/addons/">https://kubernetes.io/docs/concepts/cluster-administration/addons/</a>找到flannel相关命令执行，在这里直接运行以下命令</p>
+<pre><code>kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+</code></pre><p>安装完成后，运行以下命令查看</p>
+<pre><code>kubectl get pod -n kube-system
+</code></pre><p><img src="https://res.cloudinary.com/georgebuaa/image/upload/v1601548086/K8S%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/1601460764645_kida7q.png" alt="1601460764645"></p>
 </li>
 <li>
 <h5 id="将剩余slave加入集群中">将剩余slave加入集群中：</h5>
 <p>配置完成后，在master节点下查看当前</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">kubeadm token create <span style="color:#f92672">--</span>print<span style="color:#f92672">-</span>join<span style="color:#f92672">-</span>command
-</code></pre></div><p><img src="https://res.cloudinary.com/georgebuaa/image/upload/v1601548086/K8S%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/1601460842445_hahfuc.png" alt="1601460842445">复制以上命令各个slave节点当中即可将节点部署到k8s集群中，搭建完成后，在主节点上运行</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">kubectl get nodes
-</code></pre></div></li>
+<pre><code>kubeadm token create --print-join-command
+</code></pre><p><img src="https://res.cloudinary.com/georgebuaa/image/upload/v1601548086/K8S%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/1601460842445_hahfuc.png" alt="1601460842445">复制以上命令各个slave节点当中即可将节点部署到k8s集群中，搭建完成后，在主节点上运行</p>
+<pre><code>kubectl get nodes
+</code></pre></li>
 </ol>
 </li>
 </ul>
@@ -341,10 +341,10 @@ sudo chown $<span style="color:#f92672">(</span>id <span style="color:#f92672">-
 <p>​		<img src="https://res.cloudinary.com/georgebuaa/image/upload/v1601548086/K8S%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/1601461032749_r8bv83.png" alt="1601461032749"></p>
 <p>​		注：</p>
 <p>​		如果配置中误将slave节点配成master节点可以采用以下命令重载各个K8S组件：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">kubeadm reset
-systemctl daemon<span style="color:#f92672">-</span>reload
+<pre><code>kubeadm reset
+systemctl daemon-reload
 systemctl restart kubelet
-</code></pre></div>
+</code></pre>
     </div>
 
     <div class="post-copyright">
@@ -358,7 +358,7 @@ systemctl restart kubelet
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://georgeblog.cn/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/>https://georgeblog.cn/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</span>
+                    <a href=https://example.com/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/>https://example.com/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</span>
             </p>
             
              
@@ -374,24 +374,26 @@ systemctl restart kubelet
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://georgeblog.cn/tags/k8s/">
+            <span class="tag"><a href="https://example.com/tags/k8s/">
                     #K8S</a></span>
             
-            <span class="tag"><a href="https://georgeblog.cn/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
+            <span class="tag"><a href="https://example.com/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
                     #安装教程</a></span>
             
             </section>
         
         <section>
                 <a href="javascript:window.history.back();">back</a></span> · 
-                <span><a href="https://georgeblog.cn">home</a></span>
+                <span><a href="https://example.com">home</a></span>
         </section>
     </div>
 
     <div class="post-nav">
         
-        <a href="https://georgeblog.cn/2020/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/" class="prev" rel="prev" title="强化学习论文总结"><i class="iconfont icon-jiantou-copy"></i>&nbsp;强化学习论文总结</a>
+        <a href="https://example.com/2020/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/" class="prev" rel="prev" title="强化学习论文总结"><i class="iconfont icon-jiantou-copy"></i>&nbsp;强化学习论文总结</a>
          
+        
+        <a href="https://example.com/2020/%E5%BC%82%E5%B8%B8%E7%9B%91%E6%B5%8B%E6%96%B9%E5%90%91%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/" class="next" rel="next" title="异常监测方向文献调研">异常监测方向文献调研&nbsp;<i class="iconfont icon-jiantou"></i></a>
         
     </div>
 
@@ -437,7 +439,7 @@ systemctl restart kubelet
     	 <i class="iconfont icon-love"></i> 
          </span>
          
-            <span class="author" itemprop="copyrightHolder"><a href="https://georgeblog.cn">GEORGE</a> | </span> 
+            <span class="author" itemprop="copyrightHolder"><a href="https://example.com">GEORGE</a> | </span> 
          
          
 		  

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>K8S on GEORGE</title>
-    <link>https://georgeblog.cn/tags/k8s/</link>
+    <link>https://example.com/tags/k8s/</link>
     <description>Recent content in K8S on GEORGE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Oct 2020 18:05:48 +0800</lastBuildDate>
     
-	<atom:link href="https://georgeblog.cn/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>K8S安装教程</title>
-      <link>https://georgeblog.cn/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
+      <link>https://example.com/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
       <pubDate>Thu, 01 Oct 2020 18:05:48 +0800</pubDate>
       
-      <guid>https://georgeblog.cn/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
+      <guid>https://example.com/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
       <description>K8S集群安装文档 一、基础环境配置 物理机环境配置： CPU：i7-6700 3.6GHZ 内存16G 硬盘1T 操作系统：win10 64位 利用VMware创建四</description>
     </item>
     

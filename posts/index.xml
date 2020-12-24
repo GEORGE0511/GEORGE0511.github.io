@@ -2,30 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on GEORGE</title>
-    <link>https://georgeblog.cn/posts/</link>
+    <link>https://example.com/posts/</link>
     <description>Recent content in Posts on GEORGE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2020 18:05:48 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 24 Dec 2020 21:23:25 +0800</lastBuildDate>
     
-	<atom:link href="https://georgeblog.cn/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>异常监测方向文献调研</title>
+      <link>https://example.com/2020/%E5%BC%82%E5%B8%B8%E7%9B%91%E6%B5%8B%E6%96%B9%E5%90%91%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/</link>
+      <pubDate>Thu, 24 Dec 2020 21:23:25 +0800</pubDate>
+      
+      <guid>https://example.com/2020/%E5%BC%82%E5%B8%B8%E7%9B%91%E6%B5%8B%E6%96%B9%E5%90%91%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/</guid>
+      <description>异常检测方向文献调研 首先是一篇关于异常流量检测的综述： A comprehensive survey on network anomaly detection 年份：2018 来源：Telecommunication Systems 主要研究问题：对</description>
+    </item>
+    
+    <item>
       <title>K8S安装教程</title>
-      <link>https://georgeblog.cn/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
+      <link>https://example.com/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
       <pubDate>Thu, 01 Oct 2020 18:05:48 +0800</pubDate>
       
-      <guid>https://georgeblog.cn/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
+      <guid>https://example.com/2020/k8s%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
       <description>K8S集群安装文档 一、基础环境配置 物理机环境配置： CPU：i7-6700 3.6GHZ 内存16G 硬盘1T 操作系统：win10 64位 利用VMware创建四</description>
     </item>
     
     <item>
       <title>强化学习论文总结</title>
-      <link>https://georgeblog.cn/2020/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/</link>
+      <link>https://example.com/2020/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/</link>
       <pubDate>Thu, 13 Aug 2020 15:23:50 +0800</pubDate>
       
-      <guid>https://georgeblog.cn/2020/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://example.com/2020/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/</guid>
       <description>##由于研究生期间主要是做强化学习相关内容，所以取Google Scholar 找了若干篇高被引论文，希望可以快速入门强化学习领域。本文主要记录文章的相关内</description>
     </item>
     
