@@ -6,10 +6,19 @@
     <description>Recent content in Tags on GEORGE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Dec 2020 21:23:25 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Mar 2021 19:07:09 +0800</lastBuildDate>
     
 	<atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>周报</title>
+      <link>https://example.com/tags/%E5%91%A8%E6%8A%A5/</link>
+      <pubDate>Thu, 04 Mar 2021 19:07:09 +0800</pubDate>
+      
+      <guid>https://example.com/tags/%E5%91%A8%E6%8A%A5/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Abnormal Traffic detection</title>

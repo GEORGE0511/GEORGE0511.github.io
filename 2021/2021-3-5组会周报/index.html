@@ -9,9 +9,9 @@
   <meta name="description" content="北京航空航天大学6系20级硕士">
   <meta name="keywords" content="Python">
   
-  <link rel="prev" href="https://example.com/post/news/0.43-relnotes/" />
-  <link rel="next" href="https://example.com/post/news/0.45-relnotes/" />
-  <link rel="canonical" href="https://example.com/post/news/0.44-relnotes/" />
+  <link rel="prev" href="https://example.com/2020/%E5%BC%82%E5%B8%B8%E6%B5%81%E9%87%8F%E6%A3%80%E6%B5%8B%E6%96%B9%E5%90%91%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/" />
+  
+  <link rel="canonical" href="https://example.com/2021/2021-3-5%E7%BB%84%E4%BC%9A%E5%91%A8%E6%8A%A5/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -36,10 +36,10 @@
   <title>
        
        
-           Hugo 0.44: Friday the 13th Edition | GEORGE
+           2021-3-5组会周报 | GEORGE
        
   </title>
-  <meta name="title" content="Hugo 0.44: Friday the 13th Edition | GEORGE">
+  <meta name="title" content="2021-3-5组会周报 | GEORGE">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -57,22 +57,22 @@
          "@type": "WebPage",
          "@id": "https:\/\/example.com"
     },
-    "articleSection" : "post",
-    "name" : "Hugo 0.44: Friday the 13th Edition",
-    "headline" : "Hugo 0.44: Friday the 13th Edition",
-    "description" : "A sequel to the very popular Hugo Pipes Edition; bug-fixes and enhancements …",
+    "articleSection" : "posts",
+    "name" : "2021-3-5组会周报",
+    "headline" : "2021-3-5组会周报",
+    "description" : "本周工作 阅读论文： 题目 来源 解决问题 Embedding Temporal Network via Neighborhood Formation KDD2018 最早将霍克斯过程带入到时序网络嵌入问题当中的论文，提出了HTNE算法，加入了历史时间对现在发",
     "inLanguage" : "en-us",
     "author" : "GEORGE",
     "creator" : "GEORGE",
     "publisher": "GEORGE",
     "accountablePerson" : "GEORGE",
     "copyrightHolder" : "GEORGE",
-    "copyrightYear" : "2018",
-    "datePublished": "2018-07-13 00:00:00 \u002b0000 UTC",
-    "dateModified" : "2018-07-13 00:00:00 \u002b0000 UTC",
-    "url" : "https:\/\/example.com\/post\/news\/0.44-relnotes\/",
-    "wordCount" : "282",
-    "keywords" : [  "GEORGE"]
+    "copyrightYear" : "2021",
+    "datePublished": "2021-03-04 19:07:09 \u002b0800 CST",
+    "dateModified" : "2021-03-04 19:07:09 \u002b0800 CST",
+    "url" : "https:\/\/example.com\/2021\/2021-3-5%E7%BB%84%E4%BC%9A%E5%91%A8%E6%8A%A5\/",
+    "wordCount" : "739",
+    "keywords" : [ "周报", "GEORGE"]
 }
 </script>
 
@@ -134,17 +134,17 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Hugo 0.44: Friday the 13th Edition</h1>
+        <h1 class="post-title" itemprop="name headline">2021-3-5组会周报</h1>
         <div class="post-meta">
                 <i class="far fa-folder-open"></i>
                 <span class="post-category">
-                        <a href="https://example.com/categories/releases/"> Releases </a>
+                        <a href="https://example.com/categories/%E7%BB%84%E4%BC%9A/"> 组会 </a>
                         
                 </span>
           <span class="post-time">
-         <i class="far fa-calendar-alt"></i>  <time datetime=2018-07-13 itemprop="datePublished">2018-07-13</time>
+         <i class="far fa-calendar-alt"></i>  <time datetime=2021-03-04 itemprop="datePublished">2021-03-04</time>
            </span>
-         <i class="far fa-file-word"></i> <span class="post-word-count"> 282 字</span>
+         <i class="far fa-file-word"></i> <span class="post-word-count"> 739 字</span>
          <i class="far fa-clock"></i> <span class="more-meta"> 2 分钟</span>
          <i class="fa fa-eye"></i> <span id="busuanzi_value_page_pv"></span>次
         </div>
@@ -152,6 +152,8 @@
     <div class="post-content">
         
 
+        
+            
         
 
         
@@ -164,35 +166,58 @@
           
           
           
-          <p>Hugo <code>0.44</code> is the follow-up release, or <strong>The Sequel</strong>, of the very well received <code>0.43</code> only days ago. That release added <strong>Hugo Pipes</strong>, with SCSS/SASS support, assets bundling and minification, ad-hoc image processing and much more.</p>
-<p>This is mostly a bug-fix release, but it also includes several important improvements.</p>
-<p>Many complained that their SVG images vanished when browsed from the <code>hugo server</code>. With <strong>Hugo Pipes</strong> MIME types suddenly got really important, but Hugo&rsquo;s use of <code>Suffix</code> was ambiguous. This became visible when we redefined the <code>image/svg+xml</code> to work with <strong>Hugo Pipes</strong>. We have now added a <code>Suffixes</code> field on the MIME type definition in Hugo, which is a list of one or more filename suffixes the MIME type is identified with. If you need to add a custom MIME type definition, this means that you also need to specify the full MIME type as the key, e.g. <code>image/svg+xml</code>.</p>
-<p>Hugo now has:</p>
-<ul>
-<li>27120+ <a href="https://github.com/gohugoio/hugo/stargazers">stars</a></li>
-<li>443+ <a href="https://github.com/gohugoio/hugo/graphs/contributors">contributors</a></li>
-<li>239+ <a href="http://themes.gohugo.io/">themes</a></li>
-</ul>
-<h2 id="notes">Notes</h2>
-<ul>
-<li><code>MediaType.Suffix</code> is deprecated and replaced with a plural version,  <code>MediaType.Suffixes</code>, with a more specific definition. You will get a detailed WARNING in the console if you need to do anything.</li>
-</ul>
-<h2 id="enhancements">Enhancements</h2>
-<ul>
-<li>Allow multiple file suffixes per media type <a href="https://github.com/gohugoio/hugo/commit/b874a1ba7ab8394dc741c8c70303a30a35b63e43">b874a1ba</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4920">#4920</a></li>
-<li>Clean up the in-memory Resource reader usage <a href="https://github.com/gohugoio/hugo/commit/47d38628ec0f4e72ff17661f13456b2a1511fe13">47d38628</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4936">#4936</a></li>
-<li>Move opening of the transformed resources after cache check <a href="https://github.com/gohugoio/hugo/commit/0024dcfe3e016c67046de06d1dac5e7f5235f9e1">0024dcfe</a> <a href="https://github.com/bep">@bep</a></li>
-<li>Improve type support in <code>resources.Concat</code> <a href="https://github.com/gohugoio/hugo/commit/306573def0e20ec16ee5c447981cc09ed8bb7ec7">306573de</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4934">#4934</a></li>
-<li>Flush <code>partialCached</code> cache on rebuilds <a href="https://github.com/gohugoio/hugo/commit/6b6dcb44a014699c289bf32fe57d4c4216777be0">6b6dcb44</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4931">#4931</a></li>
-<li>Include the transformation step in the error message <a href="https://github.com/gohugoio/hugo/commit/d96f2a460f58e91d8f6253a489d4879acfec6916">d96f2a46</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4924">#4924</a></li>
-<li>Exclude *.svg from CRLF/LF conversion <a href="https://github.com/gohugoio/hugo/commit/9c1e82085eb07d5b4dcdacbe82d5bafd26e08631">9c1e8208</a> <a href="https://github.com/anthonyfok">@anthonyfok</a></li>
-</ul>
-<h2 id="fixes">Fixes</h2>
-<ul>
-<li>Fix <code>resources.Concat</code> for transformed resources <a href="https://github.com/gohugoio/hugo/commit/beec1fc98e5d37bba742d6bc2a0ff7c344b469f8">beec1fc9</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4936">#4936</a></li>
-<li>Fix static filesystem for themed multihost sites <a href="https://github.com/gohugoio/hugo/commit/80c8f3b81a9849080e64bf877288ede28d960d3f">80c8f3b8</a> <a href="https://github.com/bep">@bep</a> <a href="https://github.com/gohugoio/hugo/issues/4929">#4929</a></li>
-<li>Set permission of embedded templates to 0644 <a href="https://github.com/gohugoio/hugo/commit/2b73e89d6d2822e86360a6c92c87f539677c119b">2b73e89d</a> <a href="https://github.com/anthonyfok">@anthonyfok</a></li>
-</ul>
+          <h1 id="本周工作">本周工作</h1>
+<ol>
+<li>
+<p>阅读论文：</p>
+<table>
+<thead>
+<tr>
+<th>题目</th>
+<th>来源</th>
+<th>解决问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://dl.acm.org/doi/10.1145/3219819.3220054"><strong>Embedding Temporal Network via Neighborhood Formation</strong></a></td>
+<td>KDD2018</td>
+<td>最早将霍克斯过程带入到时序网络嵌入问题当中的论文，提出了HTNE算法，加入了历史时间对现在发生事件的正向激励</td>
+</tr>
+<tr>
+<td><a href="http://arxiv.org/abs/1909.04246"><strong>Temporal Network Embedding with Micro- and Macro-dynamics</strong></a></td>
+<td>CIKM2019</td>
+<td>加入了宏观节点之间的边的数量约束，改进了HTNE，本质上依旧是霍克斯过程</td>
+</tr>
+<tr>
+<td><a href="http://yangy.org/works/dynamictriad/dynamic_triad.pdf"><strong>Dynamic Network Embedding byModeling Triadic Closure Process</strong></a></td>
+<td>AAAI 2018</td>
+<td>加入了triad的概念，将网络信息的传播过程看作由open triad变为closed triad的过程。同样利用霍克斯过程对时序网络中的节点进行嵌入</td>
+</tr>
+</tbody>
+</table>
+<p>目前已经跑通HTNE算法，后续的改进主要有以下几点：</p>
+<ol>
+<li>
+<p>加入motif（三个节点，两条边）的影响，由于IJCAI20那篇文章（MTNE），只考虑了open triad变成closed triad的过程，本身open triad 自身是由两条边构成的，这两条边之间也存在者相互影响的关系，可以考虑把这部分影响加入。</p>
+<p><img src="https://res.cloudinary.com/georgebuaa/image/upload/v1614856272/2021-3-4%E7%BB%84%E4%BC%9A/1614855142650_eo6f42.png" alt="1614855142650"></p>
+</li>
+<li>
+<p>由于MTNE只考虑正向影响，因此可以在条件强度函数中加入负向影响</p>
+</li>
+<li>
+<p>在loss中加入对比学习（互信息最大化），使得生成的embedding效果更好，因为对比学习本身具有聚类的效果，可以拉近相似节点embedding的距离，拉大不同节点embedding的距离。但是这里涉及到负采样策略的问题，如何生成负样本这部分如何改进还在考虑。</p>
+</li>
+<li>
+<p>历史节点不更新，由于霍克斯过程的公式中有定义历史影响，而HTNE的代码中同时更新与发生事件相关的两个节点和历史节点，后续看一下是历史节点不更新效果会不会好一点</p>
+</li>
+</ol>
+</li>
+<li>
+<p>调研区块链的平台和技术：</p>
+<p>目前区块链中比较成熟的技术就是比特币和以太坊，而比特币仅仅支持数字货币，以太坊是一个开源的有智能合约功能的公共区块链平台，是目前使用最广泛的支持完备应用开发的公有区块链系统，可支持开发人员自定义各种脚本，所以还是选择采用以太坊技术。后面会在几台节点上搭一个以太坊的子链。</p>
+</li>
+</ol>
 
           
           
@@ -266,65 +291,13 @@
                     
                     <ul class="nav">
                     
-                    <ul class="nav">
-                    
                     
                         <li class="nav-item">
-                            <a class="nav-link text-left" href="#notes">
-                            Notes
+                            <a class="nav-link text-left" href="#%e6%9c%ac%e5%91%a8%e5%b7%a5%e4%bd%9c">
+                            本周工作
                             </a>
                         </li>
                     
-                    
-                    </ul>
-                    
-                    </ul>
-                    
-                
-            
-        
-        
-            
-                
-                
-                    
-                    <ul class="nav">
-                    
-                    <ul class="nav">
-                    
-                    
-                        <li class="nav-item">
-                            <a class="nav-link text-left" href="#enhancements">
-                            Enhancements
-                            </a>
-                        </li>
-                    
-                    
-                    </ul>
-                    
-                    </ul>
-                    
-                
-            
-        
-        
-            
-                
-                
-                    
-                    <ul class="nav">
-                    
-                    <ul class="nav">
-                    
-                    
-                        <li class="nav-item">
-                            <a class="nav-link text-left" href="#fixes">
-                            Fixes
-                            </a>
-                        </li>
-                    
-                    
-                    </ul>
                     
                     </ul>
                     
@@ -363,6 +336,14 @@
   
     <div class="post-tags">
         
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://example.com/tags/%E5%91%A8%E6%8A%A5/">
+                    #周报</a></span>
+            
+            </section>
+        
         <section>
                 <a href="javascript:window.history.back();">back</a></span> · 
                 <span><a href="https://example.com">home</a></span>
@@ -371,10 +352,8 @@
 
     <div class="post-nav">
         
-        <a href="https://example.com/post/news/0.43-relnotes/" class="prev" rel="prev" title="And Now: Hugo Pipes!"><i class="iconfont icon-jiantou-copy"></i>&nbsp;And Now: Hugo Pipes!</a>
+        <a href="https://example.com/2020/%E5%BC%82%E5%B8%B8%E6%B5%81%E9%87%8F%E6%A3%80%E6%B5%8B%E6%96%B9%E5%90%91%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/" class="prev" rel="prev" title="异常流量检测相关文献调研"><i class="iconfont icon-jiantou-copy"></i>&nbsp;异常流量检测相关文献调研</a>
          
-        
-        <a href="https://example.com/post/news/0.45-relnotes/" class="next" rel="next" title="Hugo 0.45: Revival of ref, relref and GetPage">Hugo 0.45: Revival of ref, relref and GetPage&nbsp;<i class="iconfont icon-jiantou"></i></a>
         
     </div>
 
@@ -445,8 +424,9 @@
 
 
     
-    
-    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
     
 
 
