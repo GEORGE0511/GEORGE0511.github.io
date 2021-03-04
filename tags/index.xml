@@ -2,138 +2,138 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on GEORGE</title>
-    <link>https://example.com/tags/</link>
+    <link>https://georgeblog.cn/tags/</link>
     <description>Recent content in Tags on GEORGE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Mar 2021 19:07:09 +0800</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://georgeblog.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>周报</title>
-      <link>https://example.com/tags/%E5%91%A8%E6%8A%A5/</link>
+      <link>https://georgeblog.cn/tags/%E5%91%A8%E6%8A%A5/</link>
       <pubDate>Thu, 04 Mar 2021 19:07:09 +0800</pubDate>
       
-      <guid>https://example.com/tags/%E5%91%A8%E6%8A%A5/</guid>
+      <guid>https://georgeblog.cn/tags/%E5%91%A8%E6%8A%A5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Abnormal Traffic detection</title>
-      <link>https://example.com/tags/abnormal-traffic-detection/</link>
+      <link>https://georgeblog.cn/tags/abnormal-traffic-detection/</link>
       <pubDate>Thu, 24 Dec 2020 21:23:25 +0800</pubDate>
       
-      <guid>https://example.com/tags/abnormal-traffic-detection/</guid>
+      <guid>https://georgeblog.cn/tags/abnormal-traffic-detection/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IDS</title>
-      <link>https://example.com/tags/ids/</link>
+      <link>https://georgeblog.cn/tags/ids/</link>
       <pubDate>Thu, 24 Dec 2020 21:23:25 +0800</pubDate>
       
-      <guid>https://example.com/tags/ids/</guid>
+      <guid>https://georgeblog.cn/tags/ids/</guid>
       <description></description>
     </item>
     
     <item>
       <title>K8S</title>
-      <link>https://example.com/tags/k8s/</link>
+      <link>https://georgeblog.cn/tags/k8s/</link>
       <pubDate>Thu, 01 Oct 2020 18:05:48 +0800</pubDate>
       
-      <guid>https://example.com/tags/k8s/</guid>
+      <guid>https://georgeblog.cn/tags/k8s/</guid>
       <description></description>
     </item>
     
     <item>
       <title>安装教程</title>
-      <link>https://example.com/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
+      <link>https://georgeblog.cn/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
       <pubDate>Thu, 01 Oct 2020 18:05:48 +0800</pubDate>
       
-      <guid>https://example.com/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
+      <guid>https://georgeblog.cn/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Networks</title>
-      <link>https://example.com/tags/networks/</link>
+      <link>https://georgeblog.cn/tags/networks/</link>
       <pubDate>Thu, 13 Aug 2020 15:23:50 +0800</pubDate>
       
-      <guid>https://example.com/tags/networks/</guid>
+      <guid>https://georgeblog.cn/tags/networks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RL</title>
-      <link>https://example.com/tags/rl/</link>
+      <link>https://georgeblog.cn/tags/rl/</link>
       <pubDate>Thu, 13 Aug 2020 15:23:50 +0800</pubDate>
       
-      <guid>https://example.com/tags/rl/</guid>
+      <guid>https://georgeblog.cn/tags/rl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://example.com/tags/hugo/</link>
+      <link>https://georgeblog.cn/tags/hugo/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/hugo/</guid>
+      <guid>https://georgeblog.cn/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Theme</title>
-      <link>https://example.com/tags/theme/</link>
+      <link>https://georgeblog.cn/tags/theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/theme/</guid>
+      <guid>https://georgeblog.cn/tags/theme/</guid>
       <description></description>
     </item>
     
     <item>
       <title>development</title>
-      <link>https://example.com/tags/development/</link>
+      <link>https://georgeblog.cn/tags/development/</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/development/</guid>
+      <guid>https://georgeblog.cn/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>go</title>
-      <link>https://example.com/tags/go/</link>
+      <link>https://georgeblog.cn/tags/go/</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/go/</guid>
+      <guid>https://georgeblog.cn/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
-      <link>https://example.com/tags/golang/</link>
+      <link>https://georgeblog.cn/tags/golang/</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/golang/</guid>
+      <guid>https://georgeblog.cn/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>templates</title>
-      <link>https://example.com/tags/templates/</link>
+      <link>https://georgeblog.cn/tags/templates/</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/templates/</guid>
+      <guid>https://georgeblog.cn/tags/templates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>https://example.com/tags/themes/</link>
+      <link>https://georgeblog.cn/tags/themes/</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/themes/</guid>
+      <guid>https://georgeblog.cn/tags/themes/</guid>
       <description></description>
     </item>
     
